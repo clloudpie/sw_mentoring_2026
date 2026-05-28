@@ -1,0 +1,14 @@
+# Python
+venv/
+.venv/
+__pycache__/
+
+# React
+node_modules/
+dist/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
