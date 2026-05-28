@@ -1,3 +1,12 @@
-export interface HelloResponse {
-  message: string;
+// src/types/index.ts
+
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+export interface UserCreate {
+  name: string;
+  email: string;
 }
