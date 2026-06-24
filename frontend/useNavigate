@@ -1,0 +1,16 @@
+// useNavigate — 코드로 페이지 이동 (버튼 클릭, 로그인 후 리다이렉트 등)
+
+import { useNavigate } from 'react-router-dom';
+
+function LoginPage() {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // 로그인 처리 후...
+    navigate('/users');       // /users로 이동
+    navigate(-1);             // 뒤로가기
+    navigate('/users', { replace: true }); // 이동 후 뒤로가기 불가 (히스토리 교체)
+  };
+
+  return <button onClick={handleLogin}>로그인</button>;
+}
